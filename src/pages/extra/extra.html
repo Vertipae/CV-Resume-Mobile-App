@@ -1,0 +1,95 @@
+<!--
+  Generated template for the ExtraPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="dark">
+    <ion-buttons start>
+      <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+          </button>
+    </ion-buttons>
+    <ion-title>Extra</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+
+
+<ion-content>
+
+<!-- buttons for different sections -->
+  <ion-toolbar no-border-top>
+    <ion-segment [(ngModel)]="extra">
+
+      <ion-segment-button value="competency">
+        Competency
+      </ion-segment-button>
+      <ion-segment-button value="charity">
+        Charity
+      </ion-segment-button>
+      <ion-segment-button value="interest">
+        Interest
+      </ion-segment-button>
+
+    </ion-segment>
+
+  </ion-toolbar>
+
+
+<!-- using ngSwitchCase to show different sections-->
+  <div [ngSwitch]="extra">
+    <ion-card *ngSwitchCase="'competency'">
+
+      <img src="assets/imgs/purple-wing.png" />
+
+      <ion-card-content>
+        <ion-card-title>
+          Competency
+        </ion-card-title>
+        <p>
+          Fusce nec vulputate diam, vitae tincidunt lorem. Vivamus ultricies nisl quis est lacinia, in elementum metus molestie. Praesent
+          maximus lacus augue, ut molestie lorem faucibus id. Donec tempor, metus vel vulputate egestas, arcu metus semper
+          augue, a gravida.
+        </p>
+      </ion-card-content>
+    </ion-card>
+
+
+    <ion-card *ngSwitchCase="'charity'">
+
+      <img src="assets/imgs/purple-wing.png" />
+
+      <ion-card-content>
+        <ion-card-title>
+          Charity
+        </ion-card-title>
+        <p>
+          Nullam vel sollicitudin mauris. Integer vulputate sodales elit quis gravida. Nunc a egestas dui, id euismod risus. Mauris
+          sollicitudin, diam in fermentum ultrices, dolor nisi imperdiet sapien, ac hendrerit eros massa sed leo. Vestibulum
+          gravida enim sit amet erat facilisis viverra. Vestibulum sed facilisis arcu, placerat tincidunt nisl. Vivamus sodales
+          vel sem vitae posuere.
+        </p>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card *ngSwitchCase="'interest'">
+
+      <img src="assets/imgs/purple-wing.png" />
+
+      <ion-card-content>
+        <ion-card-title>
+          Interest
+        </ion-card-title>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus diam mi, ultrices eu scelerisque a, convallis a massa.
+          Vivamus mattis volutpat consequat. Fusce varius leo et auctor euismod. Pellentesque molestie vitae felis suscipit
+          malesuada. Vestibulum lacus risus, efficitur a ligula id, malesuada malesuada ante.
+        </p>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

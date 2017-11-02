@@ -1,0 +1,40 @@
+<!--
+  Generated template for the ContactPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="dark">
+    <ion-buttons start>
+      <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+          </button>
+    </ion-buttons>
+    <ion-title>Contact</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-grid>
+    <ion-row center>
+      <ion-col>
+        <p>You can contact me easiest in
+          <ion-icon name="logo-facebook"></ion-icon> facebook or on the other sites clicking button in bottom right. My email is <b> Sallamaarit.jaako@student.laurea.fi</b></p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+<!-- displays a small lists of related actions when clicked -->
+  <ion-fab right bottom #fab4>
+    <button ion-fab color="primary"><ion-icon name="arrow-dropup"></ion-icon></button>
+    <ion-fab-list side="top">
+      <button ion-fab (click)="openSocial('facebook', fab4)"><ion-icon name="logo-facebook"></ion-icon></button>
+      <button ion-fab (click)="openSocial('twitter', fab4)"><ion-icon name="logo-twitter"></ion-icon></button>
+      <button ion-fab (click)="openSocial('youtube', fab4)"><ion-icon name="logo-youtube"></ion-icon></button>
+      <button ion-fab (click)="openSocial('googleplus', fab4)"><ion-icon name="logo-googleplus"></ion-icon></button>
+      <button ion-fab (click)="openSocial('github', fab4)"><ion-icon name="logo-github"></ion-icon></button>
+    </ion-fab-list>
+  </ion-fab>
+</ion-content>
