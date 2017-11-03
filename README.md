@@ -24,3 +24,5 @@ $ ionic cordova run ios
 
 Substitute ios for android if not on a Mac.
 
+[Step-by-step guide](https://github.com/Vertipae/CV-Resume-Mobile-App/blob/master/TEST-1%20MOBILE%20APP_Git.pdf)
+
