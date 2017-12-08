@@ -1,0 +1,21 @@
+<!--
+  Generated template for the SliderPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+  <ion-slides pager>
+    <ion-slide style="background-color: rgb(45, 21, 49)">
+      <ion-icon ios="ios-exit" md="md-exit" style="zoom:5.0;"></ion-icon>
+      <h1 style="color: #FFFF">Welcome to my personal App!</h1>
+      <h1 style="color: #808080; font-size: 20px">About, Contact, Projects</h1>
+      <h1 style="color: #808080; font-size: 16px">Skills, Extra Curriculum</h1>
+    </ion-slide>
+
+    <ion-slide class ="bg-image">
+        
+      <button [navPush]="nextPage" ion-button color="success">Step in</button>
+    </ion-slide>
+  </ion-slides>
+

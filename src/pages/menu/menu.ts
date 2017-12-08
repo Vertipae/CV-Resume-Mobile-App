@@ -1,5 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { IonicPage, NavController, NavParams, Nav } from 'ionic-angular';
+import { AngularFireAuth } from 'angularfire2/auth';
 
 export interface PageInterface {
   title: string;
@@ -24,9 +25,12 @@ export class MenuPage {
     { title: 'Extra', pageName: 'TabsPage', tabComponent: 'ExtraPage', index: 2, icon: 'md-happy' },
     { title: 'Contact', pageName: 'TabsPage', tabComponent: 'ContactPage', index: 3, icon: 'md-call' },
     { title: 'About', pageName: 'TabsPage', tabComponent: 'AboutPage', index: 4, icon: 'md-woman' },
+    { title: 'Soft skills', pageName: 'TabsPage', tabComponent: 'SoftskillsPage', index: 5, icon: 'md-construct' },
+    { title: 'Technical skills', pageName: 'TabsPage', tabComponent: 'TechskillsPage', index: 6, icon: 'md-calculator' },
+    { title: 'Team projects', pageName: 'TabsPage', tabComponent: 'TeamprojectsPage', index: 7, icon: 'md-contacts' },
   ];
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public fire: AngularFireAuth, public navCtrl: NavController, public navParams: NavParams) {
   }
 // Opens given page
   openPage(page: PageInterface) {
@@ -56,6 +60,11 @@ export class MenuPage {
   }
   ionViewDidLoad() {
     console.log('ionViewDidLoad MenuPage');
+  }
+  logout() {
+    this.fire.auth.signOut().then(() => {
+      this.nav.setRoot('SliderPage');
+    });
   }
 
 }

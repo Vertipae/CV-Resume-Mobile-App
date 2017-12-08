@@ -29,6 +29,9 @@ export class LoginPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad LoginPage');
+  } // take you to Register Page
+  openRegisterPage() {
+    this.navCtrl.push('RegisterPage');
   }
 
   // When user clicks signIn() this method will bring you to page after login

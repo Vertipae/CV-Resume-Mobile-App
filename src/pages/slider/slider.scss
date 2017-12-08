@@ -1,0 +1,15 @@
+page-slider {
+    // this is for the bullets where you can slide the page
+    .swiper-pagination .swiper-pagination-bullet {
+        border-radius: 0;
+        background-color: #7948FF;
+        opacity: 1;
+      }
+      // adjusting background image
+      .bg-image {
+        background-image: url('../assets/imgs/bk1.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}

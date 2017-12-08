@@ -19,6 +19,9 @@ export class TabsPage {
   tab3Root="ExtraPage";
   tab4Root="ContactPage";
   tab5Root="AboutPage";
+  tab6Root="SoftskillsPage";
+  tab7Root="TechskillsPage";
+  tab8Root="TeamprojectsPage";
   myIndex: number;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
